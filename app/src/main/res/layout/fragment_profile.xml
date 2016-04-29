@@ -103,7 +103,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_weight="3"
                 android:gravity="center"
-                android:text="Left Points" />
+                android:text="@string/left_points" />
 
             <cn.studyjams.s1.sj32.zhangqidi.view.RectangleView
                 android:id="@+id/rectangle_profile_left"
@@ -128,7 +128,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_weight="3"
                 android:gravity="center"
-                android:text="Earn Points" />
+                android:text="@string/earn_points" />
 
             <cn.studyjams.s1.sj32.zhangqidi.view.RectangleView
                 android:id="@+id/rectangle_profile_earn"
@@ -153,7 +153,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_weight="3"
                 android:gravity="center"
-                android:text="Cost Points" />
+                android:text="@string/cost_points" />
 
             <cn.studyjams.s1.sj32.zhangqidi.view.RectangleView
                 android:id="@+id/rectangle_profile_cost"

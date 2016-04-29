@@ -176,7 +176,7 @@ public class MainActivity extends BaseActivity
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton radbtn = (RadioButton) dialogView.findViewById(checkedId);
                 type[0] = radbtn.getText().toString();
-                if(type[0].equals("任务")){
+                if(type[0].equals("任务")||type[0].equals("task")){
                     type[0] = "task";
                 }else{
                     type[0] = "desire";

@@ -42,4 +42,7 @@
     <string name="total_task">总任务数</string>
     <string name="total_desire">总欲望数</string>
     <string name="snack_bar">再按一次退出程序</string>
+    <string name="left_points">剩余分数</string>
+    <string name="earn_points">赚取分数</string>
+    <string name="cost_points">花费分数</string>
 </resources>

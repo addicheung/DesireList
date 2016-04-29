@@ -22,7 +22,7 @@
     <string name="about_blog">Blog: http://www.alimodern.com</string>
     <string name="dialogitle">Add Task Or Desire</string>
     <string name="dialogtitle">Add Task Or Desire</string>
-    <string name="nothing">Nothing to show...</string>
+    <string name="nothing">Press the yellow button to add...</string>
     <string name="profile_bottom">No Pain No Gain !</string>
     <string name="jieshao" >By using this app you can easily improve self control ability.
     Because in this app you can add task or desire to yourslf.And by doning task you can earn points
@@ -43,4 +43,7 @@
     <string name="total_task">Total Task</string>
     <string name="total_desire">Total Desire</string>
     <string name="snack_bar">Press back again to exit</string>
+    <string name="left_points">Left Points</string>
+    <string name="earn_points">Earn Points</string>
+    <string name="cost_points">Cost Points</string>
 </resources>

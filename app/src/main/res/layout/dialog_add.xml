@@ -31,7 +31,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:textSize="18dp"
-            android:text="Type:" />
+            android:text="@string/type_dialog" />
 
         <RadioGroup
             android:id="@+id/rg_dialog"
@@ -45,14 +45,14 @@
                 android:id="@+id/rb_dialog_task"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Task" />
+                android:text="@string/task" />
 
             <RadioButton
                 android:id="@+id/rb_dialog_desire"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:text="Desire" />
+                android:text="@string/desire" />
         </RadioGroup>
     </LinearLayout>
 
@@ -72,7 +72,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:textSize="18dp"
-            android:text="Points:" />
+            android:text="@string/point_dialog" />
 
         <SeekBar
             android:id="@+id/sb_dialog"
@@ -109,7 +109,7 @@
                 android:id="@+id/et_dialog_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Detail"
+                android:hint="@string/hint"
                 />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
@@ -130,7 +130,7 @@
            android:layout_width="0dp"
            android:layout_height="wrap_content"
            android:layout_weight="5"
-           android:text="Cancel"
+           android:text="@string/cancel"
            android:layout_marginRight="8dp"
            />
         <Button
@@ -140,7 +140,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:text="Add"
+            android:text="@string/add"
             android:layout_marginLeft="8dp"
             />
     </LinearLayout>

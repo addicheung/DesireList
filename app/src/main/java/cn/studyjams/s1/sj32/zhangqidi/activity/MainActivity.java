@@ -74,6 +74,7 @@ public class MainActivity extends BaseActivity
      * switch to HomeFragment
      */
     private void switch2Home() {
+        fab.animate().scaleX(1f).scaleY(1f).setInterpolator(new AccelerateInterpolator()).setDuration(300).start();
         Fragment fr = HomeFragment.getInstance();
         getSupportFragmentManager().beginTransaction().replace(R.id.rl_content, fr, "homefragment").commit();
     }
@@ -82,6 +83,7 @@ public class MainActivity extends BaseActivity
      * switch to ProfileFragment
      */
     private void switch2Profile() {
+        fab.animate().scaleX(0f).scaleY(0f).setInterpolator(new AccelerateInterpolator()).setDuration(300).start();
         Fragment fr = ProfileFragment.getInstance();
         getSupportFragmentManager().beginTransaction().replace(R.id.rl_content, fr, "progfilefragment").commit();
     }
@@ -90,6 +92,7 @@ public class MainActivity extends BaseActivity
      * switch to GuideFragment
      */
     private void switch2Guide() {
+        fab.animate().scaleX(0f).scaleY(0f).setInterpolator(new AccelerateInterpolator()).setDuration(300).start();
         Fragment fr = GuideFragment.getInstance();
         getSupportFragmentManager().beginTransaction().replace(R.id.rl_content, fr, "guidefragment").commit();
     }
@@ -173,6 +176,11 @@ public class MainActivity extends BaseActivity
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton radbtn = (RadioButton) dialogView.findViewById(checkedId);
                 type[0] = radbtn.getText().toString();
+                if(type[0].equals("任务")){
+                    type[0] = "task";
+                }else{
+                    type[0] = "desire";
+                }
                 Log.i("RadioGroup", type[0].toLowerCase());
                 type[0] = type[0].toLowerCase();
             }
@@ -256,6 +264,8 @@ public class MainActivity extends BaseActivity
         if (id == R.id.nav_about) {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
+        }else if(id == R.id.nav_showguide){
+            switch2Guide();
         }
         return true;
     }
@@ -271,14 +281,11 @@ public class MainActivity extends BaseActivity
         int id = item.getItemId();
         if (id == R.id.nav_home) {
             toolbar.setTitle(R.string.app_name);
-            fab.animate().scaleX(1f).scaleY(1f).setInterpolator(new AccelerateInterpolator()).setDuration(300).start();
-            switch2Home();
+           switch2Home();
         } else if (id == R.id.nav_profile) {
             toolbar.setTitle(R.string.nav_profile);
-            fab.animate().scaleX(0f).scaleY(0f).setInterpolator(new AccelerateInterpolator()).setDuration(300).start();
             switch2Profile();
         } else if (id == R.id.nav_guide) {
-            fab.animate().scaleX(0f).scaleY(0f).setInterpolator(new AccelerateInterpolator()).setDuration(300).start();
             toolbar.setTitle(R.string.nav_guide);
             switch2Guide();
         } else if (id == R.id.nav_share) {
@@ -331,7 +338,7 @@ public class MainActivity extends BaseActivity
     private void exit() {
         if (!isExit) {
             isExit = true;
-            Snackbar.make(container,"Press Back Again To Exit",Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(container,getResources().getString(R.string.snack_bar),Snackbar.LENGTH_SHORT).show();
             myhandler.sendEmptyMessageDelayed(0, 2000);
         } else {
             finish();

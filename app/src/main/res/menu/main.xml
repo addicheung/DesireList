@@ -6,4 +6,9 @@
         android:orderInCategory="100"
         android:title="@string/nav_about"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_showguide"
+        android:orderInCategory="100"
+        android:title="@string/nav_showguide"
+        app:showAsAction="never" />
 </menu>

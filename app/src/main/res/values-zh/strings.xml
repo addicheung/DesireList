@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">欲望清单</string>
+    <string name="desire">欲望</string>
+    <string name="task">任务</string>
+    <string name="todo">进行中</string>
+    <string name="done">已完成</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">设置</string>
+    <string name="author">继续努力!</string>
+    <string name="nav_exit">退出</string>
+    <string name="nav_head_others">其他</string>
+    <string name="nav_about">关于</string>
+    <string name="nav_home">主页</string>
+    <string name="nav_guide">使用指导</string>
+    <string name="author_author">作者: Addi Cheung</string>
+    <string name="nav_profile">记录</string>
+    <string name="about">关于(About):\n\n本应用Google StudyJams 2016 中国区活动结业作品</string>
+    <string name="about_author">作者(Author):\n\n张啟迪（Addi Cheung）</string>
+    <string name="about_github">Github: https://github.com/addiz/DesireList</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="about_blog">Blog: http://www.alimodern.com</string>
+    <string name="dialogitle">添加任务或欲望</string>
+    <string name="dialogtitle">添加任务或欲望</string>
+    <string name="nothing">请添加一个任务或者欲望...</string>
+    <string name="profile_bottom">没有付出就没有收获!</string>
+    <string name="jieshao" >
+        通过使用这个应用，你可以轻易地培养良好的自我控制能力。在这个App中，你可以通过添加任务或者欲望来管理自己日常生活中要做的事情。通过做任务，你可以赚取足够的分数来消费你的欲望。
+    </string>
+    <string name="howtouse_detail" >你可以按黄色的FAB按钮来添加一个任务或者欲望,如下</string>
+    <string name="howtouse_detail2" >在这里添加你的任务或者欲望的详细信息</string>
+    <string name="howtouse_detail3" >你可以左滑呼出侧滑菜单来打开相应功能，包括查看帮助，查看个人记录，退出应用等</string>
+    <string name="howtouse_detail4" >最后，你在滑动TAB来查看你正在进行的欲望或者任务，或者查看已完成的任务或者欲望，完成一项事情后你可以在对应事情的卡片上点击勾来完成打卡</string>
+    <string name="nav_showguide">怎么使用?</string>
+    <string name="nav_share">分享</string>
+    <string name="cancel">取消</string>
+    <string name="add">添加</string>
+    <string name="type_dialog">类型:</string>
+    <string name="point_dialog">分数:</string>
+    <string name="hint">详细信息</string>
+    <string name="date">日期</string>
+    <string name="total_task">总任务数</string>
+    <string name="total_desire">总欲望数</string>
+    <string name="snack_bar">再按一次退出程序</string>
+</resources>

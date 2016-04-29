@@ -47,9 +47,9 @@ public class ContentDoneAdapter extends RecyclerView.Adapter<ContentDoneAdapter.
             (holder).tv_done_type.setText("D");
             (holder).tv_done_type.setBackgroundColor(context.getResources().getColor(R.color.colorAccent));
         }
-        (holder).tv_done_date.setText("Date: "+bean.getDate());
-        (holder).tv_done_detail.setText("Detail: "+bean.getDetail());
-        (holder).tv_done_points.setText("Points: "+bean.getPoints()+"");
+        (holder).tv_done_date.setText(context.getResources().getString(R.string.date)+": "+bean.getDate());
+        (holder).tv_done_detail.setText(context.getResources().getString(R.string.hint)+": "+bean.getDetail());
+        (holder).tv_done_points.setText(context.getResources().getString(R.string.point_dialog)+bean.getPoints()+"");
 
         if (bean.getType().equals("task")) {
            /* (holder).tv_done_type.setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));

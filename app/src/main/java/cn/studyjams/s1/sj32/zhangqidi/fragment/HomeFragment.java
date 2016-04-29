@@ -43,8 +43,8 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home,container,false);
         viewPager = (ViewPager) view.findViewById(R.id.vp_home);
         tabLayout = (TabLayout) view.findViewById(R.id.tl_home);
-        tabLayout.addTab(tabLayout.newTab().setText("Todo"));
-        tabLayout.addTab(tabLayout.newTab().setText("Done"));
+        tabLayout.addTab(tabLayout.newTab().setText(getResources().getString(R.string.todo)));
+        tabLayout.addTab(tabLayout.newTab().setText(getResources().getString(R.string.done)));
         setupAdapter();
         return view;
     }
@@ -67,7 +67,7 @@ public class HomeFragment extends Fragment {
 
 
     public class  MyPagerAdapter extends FragmentPagerAdapter{
-        private String[] titles = new String[]{"To Do","Done"};
+        private String[] titles = new String[]{getResources().getString(R.string.todo),getResources().getString(R.string.done)};
         private List<Fragment> mData = new ArrayList<>();
         public MyPagerAdapter(FragmentManager fm, List<Fragment> mData) {
             super(fm);

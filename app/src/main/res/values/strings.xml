@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">DesireList</string>
+    <string name="desire">Desire</string>
+    <string name="task">Task</string>
+    <string name="todo">To Do</string>
+    <string name="done">Done</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
@@ -28,4 +32,15 @@
     <string name="howtouse_detail2" >Then you can add task or desire</string>
     <string name="howtouse_detail3" >You can open the left drawer to go to see your profile,guidance,share the app or exit</string>
     <string name="howtouse_detail4" >At last you can scroll the tap to see the things to do or done.In the To Do tab you can press the tick and that means you finish this thing</string>
+    <string name="nav_showguide">how to use?</string>
+    <string name="nav_share">Share</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="type_dialog">Type:</string>
+    <string name="point_dialog">Points:</string>
+    <string name="hint">Detail</string>
+    <string name="date">Date</string>
+    <string name="total_task">Total Task</string>
+    <string name="total_desire">Total Desire</string>
+    <string name="snack_bar">Press back again to exit</string>
 </resources>

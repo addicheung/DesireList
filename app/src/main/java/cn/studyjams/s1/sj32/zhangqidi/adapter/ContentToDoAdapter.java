@@ -46,9 +46,9 @@ public class ContentToDoAdapter extends RecyclerView.Adapter<ContentToDoAdapter.
         Taskbean bean = mData.get(position);
         String task = "task";
         Log.i("onBindViewH", bean.getType() + "-");
-        (holder).tv_todo_date.setText("Date: " + bean.getDate());
-        (holder).tv_todo_detail.setText("Detail: " + bean.getDetail());
-        (holder).tv_todo_points.setText("Points: " + bean.getPoints());
+        (holder).tv_todo_date.setText(context.getResources().getString(R.string.date)+": " + bean.getDate());
+        (holder).tv_todo_detail.setText(context.getResources().getString(R.string.hint)+": " + bean.getDetail());
+        (holder).tv_todo_points.setText(context.getResources().getString(R.string.point_dialog) + bean.getPoints());
         if ((bean.getType()).equals(task)) {
             holder.iv_todo_type.setText("T");
             holder.iv_todo_type.setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));

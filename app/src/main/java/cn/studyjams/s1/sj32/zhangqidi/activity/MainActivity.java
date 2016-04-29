@@ -205,7 +205,7 @@ public class MainActivity extends BaseActivity
                 SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
                 String dateString = formatter.format(currentTime);
                 int isdone = 0;
-                if (table.isEnough(points[0])) {
+                if (type[0].equals("task")||table.isEnough(points[0])) {
                     Taskbean bean = new Taskbean(0, type[0], dateString, detail[0], points[0], isdone);
                     insertData(bean);
                     dialog.dismiss();

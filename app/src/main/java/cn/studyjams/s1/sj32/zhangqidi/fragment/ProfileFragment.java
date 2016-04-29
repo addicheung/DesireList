@@ -47,6 +47,7 @@ public class ProfileFragment extends Fragment {
         rectangle_profile_earn = (RectangleView) v.findViewById(R.id.rectangle_profile_earn);
         rectangle_profile_cost = (RectangleView) v.findViewById(R.id.rectangle_profile_cost);
         srl_profile = (SwipeRefreshLayout) v.findViewById(R.id.srl_profile);
+        srl_profile.setColorSchemeColors(new int[]{0xff009688});
         dbHelper = new DataBaseHelper(getContext());
         setData();
         srl_profile.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {

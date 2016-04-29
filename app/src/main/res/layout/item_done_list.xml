@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_done_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="D"
+            android:textColor="@color/text"
+            android:textSize="@dimen/cardview_left_textSize" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/tv_done_date"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Date" />
+
+            <TextView
+                android:paddingTop="4dp"
+                android:id="@+id/tv_done_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="detail" />
+
+            <TextView
+                android:id="@+id/tv_done_points"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="points" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_done_result"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/secondTextPrimary"
+            android:gravity="center"
+            android:text="+5"
+            android:textColor="@color/text"
+            android:textSize="@dimen/cardview_right_textSize" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

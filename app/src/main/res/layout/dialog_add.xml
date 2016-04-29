@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="16dp"
+        android:textSize="18dp"
+        android:text="@string/dialogtitle"
+        android:textColor="@color/text" />
+
+    <LinearLayout
+        android:id="@+id/ly_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tv_dialog_title"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:text="Type:" />
+
+        <RadioGroup
+            android:id="@+id/rg_dialog"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_dialog_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task" />
+
+            <RadioButton
+                android:id="@+id/rb_dialog_desire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Desire" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:id="@+id/ly_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_1"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:text="Points:" />
+
+        <SeekBar
+            android:id="@+id/sb_dialog"
+            android:layout_weight="7"
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:max="100"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_dialog_points"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/ly_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_2"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_dialog_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Detail"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:id="@+id/ly_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/ly_3"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+       <Button
+           android:id="@+id/btn_dialog_cancel"
+           android:background="@drawable/btn_select"
+           android:textColor="@color/text"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="5"
+           android:text="Cancel"
+           android:layout_marginRight="8dp"
+           />
+        <Button
+            android:id="@+id/btn_dialog_add"
+            android:background="@drawable/btn_select"
+            android:textColor="@color/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Add"
+            android:layout_marginLeft="8dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

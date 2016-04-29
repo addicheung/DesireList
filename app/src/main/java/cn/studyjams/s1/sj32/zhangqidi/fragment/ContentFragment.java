@@ -19,8 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.studyjams.s1.sj32.zhangqidi.R;
-import cn.studyjams.s1.sj32.zhangqidi.Util.DataBaseHelper;
-import cn.studyjams.s1.sj32.zhangqidi.Util.OperateTable;
+import cn.studyjams.s1.sj32.zhangqidi.util.DataBaseHelper;
+import cn.studyjams.s1.sj32.zhangqidi.util.OperateTable;
 import cn.studyjams.s1.sj32.zhangqidi.adapter.ContentDoneAdapter;
 import cn.studyjams.s1.sj32.zhangqidi.adapter.ContentToDoAdapter;
 import cn.studyjams.s1.sj32.zhangqidi.beans.Taskbean;

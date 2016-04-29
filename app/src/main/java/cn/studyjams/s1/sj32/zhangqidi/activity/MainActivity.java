@@ -2,7 +2,6 @@ package cn.studyjams.s1.sj32.zhangqidi.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.DatabaseUtils;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -31,15 +30,13 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import cn.studyjams.s1.sj32.zhangqidi.R;
-import cn.studyjams.s1.sj32.zhangqidi.Util.DataBaseHelper;
-import cn.studyjams.s1.sj32.zhangqidi.Util.OperateTable;
+import cn.studyjams.s1.sj32.zhangqidi.util.DataBaseHelper;
+import cn.studyjams.s1.sj32.zhangqidi.util.OperateTable;
 import cn.studyjams.s1.sj32.zhangqidi.beans.Taskbean;
-import cn.studyjams.s1.sj32.zhangqidi.fragment.ContentFragment;
 import cn.studyjams.s1.sj32.zhangqidi.fragment.GuideFragment;
 import cn.studyjams.s1.sj32.zhangqidi.fragment.HomeFragment;
 import cn.studyjams.s1.sj32.zhangqidi.fragment.ProfileFragment;

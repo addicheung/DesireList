@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import cn.studyjams.s1.sj32.zhangqidi.R;
-import cn.studyjams.s1.sj32.zhangqidi.Util.DataBaseHelper;
-import cn.studyjams.s1.sj32.zhangqidi.Util.OperateTable;
-import cn.studyjams.s1.sj32.zhangqidi.View.RectangleView;
+import cn.studyjams.s1.sj32.zhangqidi.util.DataBaseHelper;
+import cn.studyjams.s1.sj32.zhangqidi.util.OperateTable;
+import cn.studyjams.s1.sj32.zhangqidi.view.RectangleView;
 
 /**
  * Created by AddiCheung on 2016/4/26 0026.

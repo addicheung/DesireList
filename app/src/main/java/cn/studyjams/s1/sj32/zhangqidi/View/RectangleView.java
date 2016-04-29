@@ -1,4 +1,4 @@
-package cn.studyjams.s1.sj32.zhangqidi.View;
+package cn.studyjams.s1.sj32.zhangqidi.view;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

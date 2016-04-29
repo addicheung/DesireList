@@ -12,7 +12,6 @@ import android.widget.TextView;
 import java.util.List;
 
 import cn.studyjams.s1.sj32.zhangqidi.R;
-import cn.studyjams.s1.sj32.zhangqidi.View.RectangleView;
 import cn.studyjams.s1.sj32.zhangqidi.beans.Taskbean;
 
 /**

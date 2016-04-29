@@ -1,4 +1,4 @@
-package cn.studyjams.s1.sj32.zhangqidi.Util;
+package cn.studyjams.s1.sj32.zhangqidi.util;
 
 /**
  * 数据库操作类
@@ -11,7 +11,6 @@ import android.util.Log;
 
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import cn.studyjams.s1.sj32.zhangqidi.beans.Taskbean;

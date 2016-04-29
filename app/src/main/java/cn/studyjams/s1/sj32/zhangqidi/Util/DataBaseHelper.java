@@ -1,4 +1,4 @@
-package cn.studyjams.s1.sj32.zhangqidi.Util;
+package cn.studyjams.s1.sj32.zhangqidi.util;
 
 /**
  * DataBaseHelper
